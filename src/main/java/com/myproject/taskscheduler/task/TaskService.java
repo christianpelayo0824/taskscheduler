@@ -6,7 +6,7 @@ public interface TaskService {
 
     List<Task> findAll();
 
-    boolean saveTask(Task task);
+    boolean saveTask(TaskPOJO taskPOJO);
 
     void saveAllTask(List<Task> tasks);
 

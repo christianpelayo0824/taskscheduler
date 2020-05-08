@@ -15,7 +15,6 @@ import java.util.Map;
 @RequestMapping(path = "/task")
 public class TaskController {
 
-
     private TaskService taskService;
 
     @Autowired
@@ -48,17 +47,17 @@ public class TaskController {
      * </pre>
      * </blockquote>
      *
-     * @param task
-     * @return
+     * @param taskPOJO The {@link TaskPOJO} object to be save.
+     * @return The Response in a Map form.
      */
     @PostMapping(value = "/save", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> saveTask(@RequestBody Task task) {
+    public ResponseEntity<Map<String, Object>> saveTask(@RequestBody TaskPOJO taskPOJO) {
 
         // Response Holder
         Map<String, Object> returnMap = new HashMap<>();
 
         // Check if the saving is success
-        boolean isSave = taskService.saveTask(task);
+        boolean isSave = taskService.saveTask(taskPOJO);
 
         // Construct response message.
         String message = isSave ? "Successfully Inserted" : "Failed Inserting";
