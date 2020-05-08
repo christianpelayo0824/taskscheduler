@@ -1,6 +1,4 @@
-package com.myproject.taskscheduler.service.task;
-
-import com.myproject.taskscheduler.model.Task;
+package com.myproject.taskscheduler.task;
 
 import java.util.List;
 

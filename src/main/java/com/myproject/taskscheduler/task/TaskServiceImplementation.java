@@ -1,8 +1,5 @@
-package com.myproject.taskscheduler.service.task;
+package com.myproject.taskscheduler.task;
 
-import com.myproject.taskscheduler.controller.TaskController;
-import com.myproject.taskscheduler.model.Task;
-import com.myproject.taskscheduler.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

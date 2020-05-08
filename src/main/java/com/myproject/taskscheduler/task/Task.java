@@ -1,4 +1,4 @@
-package com.myproject.taskscheduler.model;
+package com.myproject.taskscheduler.task;
 
 import lombok.Data;
 

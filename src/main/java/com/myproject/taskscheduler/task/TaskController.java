@@ -1,7 +1,5 @@
-package com.myproject.taskscheduler.controller;
+package com.myproject.taskscheduler.task;
 
-import com.myproject.taskscheduler.model.Task;
-import com.myproject.taskscheduler.service.task.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
