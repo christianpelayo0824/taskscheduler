@@ -11,6 +11,12 @@ import java.util.List;
 import java.util.Map;
 
 
+/**
+ * REST-End Point for Task Object.
+ *
+ * @author christian
+ * @since 2020-05-08
+ */
 @RestController
 @RequestMapping(path = "/task")
 public class TaskController {
